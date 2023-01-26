@@ -1,0 +1,135 @@
+/* :root{
+    --violet: #3a52a4
+    --green: #44b750
+    --red: #da282d
+    --backColor: #e7ebf1
+} */
+body{
+    font-family: 'Nunito', sans-serif; 
+}
+.Father{
+    /* background-color: black; */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 350px auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: "navBar navBar" "side main";
+    row-gap: 15px;
+}
+.Father .navBar{
+    grid-area: navBar;
+    background-color: #3a52a4;
+    font-size: xxx-large;
+    color: aliceblue;
+}
+.Father .side{
+    grid-area: side;
+    background-color: #e7ebf1;
+    
+}
+.Father .main{
+    grid-area: main;
+    background-color: #e7ebf1;
+
+}
+.CkeckBox{
+    font-weight: bold;
+}
+.dis2669{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.dis2669 p{
+    font-size: 10px;
+    margin-bottom: 0px;
+}
+.super-side{
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 3%;
+    margin: 0px auto;
+    box-shadow: 0 0 10px 0px;
+}
+.common{
+    background-color: white;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 3%;
+    box-shadow: 0 0 10px 0px;
+}
+.main{ 
+    display: grid;
+    grid-template-rows: repeat(2 ,auto);
+    grid-template-columns: repeat(3 , auto);
+    gap: 25px;
+    margin: 0 auto;
+}
+.product2{
+    /* background-color: chocolate; */
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2 , auto);
+    grid-template-rows: auto;
+    column-gap: 5px;
+    position: relative;
+}
+span{
+    color: red;
+    font-size:xx-large;
+}
+.button{
+    width: 100%;
+    margin: 7px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+.button1{
+    background-color: green;
+}
+.button2{
+    background-color:#1c7ac2;
+}
+.image img{
+    width: 400px;
+}
+.details p{
+    color: rgba(0, 0, 0, 0.50);
+}
+.image{
+    position: relative;
+}
+.image::after{
+    content: "30$";
+    background: green;
+    color: #fff;
+    padding: 3px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.details p{
+    font-size: 15px;
+}
+.prod-cont::after{
+    content: "Suggested for you";
+    background: red;
+    color: #fff;
+    padding: 3px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+.Range{
+    width: 100%;
+}
